@@ -1,13 +1,12 @@
 {
-  "type": "postgres",
+  "type": "mysql",
   "host": "localhost",
-  "port": "5433",
-  "username": "remote",
-  "password": "dev123",
+  "port": "3306",
+  "username": "nodeuser",
+  "password": "node",
   "database": "lacarte",
   "logging": false,
   "entities": ["src/entity/**/*.ts"],
-  "synchronize": true,
   "migrations": ["src/migration/**/*.ts"],
   "subscribers": ["src/subscriber/**/*.ts"],
   "cli": {
