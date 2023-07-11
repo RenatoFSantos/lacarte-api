@@ -2,6 +2,9 @@
   "name": "lacarte-api",
   "version": "0.0.1",
   "description": "Cardápio e Cartão Fidelidade",
+  "engines": {
+    "node": "14.x"
+  },
   "devDependencies": {
     "@types/node": "^8.0.29",
     "ts-node": "3.3.0",
