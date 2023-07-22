@@ -16,6 +16,7 @@ const allowedOrigins = [
   "http://localhost:8100",
   "http://localhost:4200",
   "http://192.168.100.11:8100",
+  "https://lacarte-web.onrender.com",
 ];
 
 // Reflect the origin if it's in the allowed list or not defined (cURL, Postman, etc.)
