@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Cardápio e Cartão Fidelidade",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "devDependencies": {
     "@types/node": "^8.0.29",

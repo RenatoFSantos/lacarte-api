@@ -1,10 +1,10 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "dpg-ciu2655gkuvoigeq2ls0-a",
   "port": "5432",
   "username": "remote",
-  "password": "dev123",
-  "database": "lacarte",
+  "password": "NtSQK4kQYdVDeRz2tXEP3n0KoYCxuIHB",
+  "database": "lacarte_apnx",
   "logging": false,
   "entities": ["src/entity/**/*.ts"],
   "synchronize": true,
