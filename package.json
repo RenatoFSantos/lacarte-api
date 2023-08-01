@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.29",
-    "ts-node": "3.3.0",
+    "ts-node": "^10.9.0",
     "typescript": "3.3.3333"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "nodemailer": "^6.8.0",
     "pg": "^8.11.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "0.2.37"
+    "typeorm": "^0.2.45"
   },
   "scripts": {
     "start": "node src/index.js",
@@ -34,7 +34,7 @@
     "start:ts": "ts-node src/index.ts",
     "server": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts --delay 1500ms",
     "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
-    "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
+    "migration:run": "npx typeorm-ts-node-commonjs migration:run -- -d ./src/data-source.ts",
     "build": "tsc --build",
     "clean": "tsc --build --clean"
   }

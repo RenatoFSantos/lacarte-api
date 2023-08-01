@@ -5,8 +5,8 @@ import * as cors from "cors";
 import { Request, Response } from "express";
 import { Routes } from "./routes";
 import config from "./configuration/config";
-import connection from "./configuration/connection";
 import auth from "./middlaware/auth";
+import connection from "./configuration/connection";
 
 const allowedOrigins = [
   "capacitor://localhost",
@@ -73,9 +73,18 @@ Routes.forEach((route) => {
 app.listen(config.port, async () => {
   console.log(`Api initialized in port ${config.port}`);
   try {
-    await connection.createConnection();
-    console.log("Database connected!");
-    // insert new users for initialize
+    await connection
+      .createConnection()
+      .then(() => {
+        console.log("Database conected! 🏆");
+      })
+      .catch((err) => {
+        console.error("Erro durante o processo de inicialização", err);
+      });
+
+    //   await connection.createConnection();
+    //   console.log("Database connected!");
+    //   // insert new users for initialize
   } catch (error) {
     console.log("Database not conected. Error =", error);
   }
