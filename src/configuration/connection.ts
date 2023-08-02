@@ -16,7 +16,7 @@ import { Order } from "../entity/Order";
 import { OrderMenu } from "../entity/OrderMenu";
 import { Promotion } from "../entity/Promotion";
 import { Voucher } from "../entity/Voucher";
-const cfg = require("../../ormconfig.json");
+const cfg = require("./../../ormconfig.json");
 
 export default {
   createConnection: async () => {
