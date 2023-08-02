@@ -17,7 +17,7 @@ export abstract class BaseController<T> extends BaseNotification {
   }
 
   public checkNoPermission(request: Request) {
-    return this._onlyAdminController && request.userCdType != "A";
+    return this._onlyAdminController && request.params.userCdType != "A";
     // return false;
   }
 
