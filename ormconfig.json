@@ -7,13 +7,13 @@
   "password": "ioY0dhj4KTHU5q8G9Ms1BQuZCJRDVDiX",
   "database": "vledfypm",
   "logging": false,
-  "entities": ["src/entity/**/*.ts"],
+  "entities": ["entity/**/*.ts"],
   "synchronize": true,
-  "migrations": ["src/migration/**/*.ts"],
-  "subscribers": ["src/subscriber/**/*.ts"],
+  "migrations": ["migration/**/*.ts"],
+  "subscribers": ["subscriber/**/*.ts"],
   "cli": {
-    "entitiesDir": "src/entity",
-    "migrationsDir": "src/migration",
-    "subscribersDir": "src/subscriber"
+    "entitiesDir": "entity",
+    "migrationsDir": "migration",
+    "subscribersDir": "subscriber"
   }
 }
