@@ -16,17 +16,15 @@ import { Order } from "../entity/Order";
 import { OrderMenu } from "../entity/OrderMenu";
 import { Promotion } from "../entity/Promotion";
 import { Voucher } from "../entity/Voucher";
-const cfg = require("./../../ormconfig.json");
-
 export default {
   createConnection: async () => {
     await createConnection({
-      type: cfg.type,
-      host: cfg.host,
-      port: cfg.port,
-      username: cfg.username,
-      password: cfg.password,
-      database: cfg.database,
+      type: "postgres",
+      host: "silly.db.elephantsql.com",
+      port: 5432,
+      username: "vledfypm",
+      password: "ioY0dhj4KTHU5q8G9Ms1BQuZCJRDVDiX",
+      database: "vledfypm",
       synchronize: true,
       logging: false,
       entities: [
