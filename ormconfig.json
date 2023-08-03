@@ -7,7 +7,7 @@
   "password": "ioY0dhj4KTHU5q8G9Ms1BQuZCJRDVDiX",
   "database": "vledfypm",
   "logging": false,
-  "entities": ["src/entity/**/*{.ts,.js}"],
+  "entities": ["build/entity/**/*{.ts,.js}"],
   "synchronize": true,
   "migrations": ["src/migration/**/*.ts"],
   "subscribers": ["src/subscriber/**/*.ts"],
