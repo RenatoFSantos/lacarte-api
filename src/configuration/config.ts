@@ -3,7 +3,6 @@ export default {
   folderStorage: process.env.URL_STORAGE || "./storage",
   pictureQuality: process.env.PICTURE_QUALITY || 80,
   secretKey: process.env.SECRETKEY || "96c02216-286a-4312-a37b-38b6f2594024",
-  typeorm: process.env.TYPEORM_ENTITIES || "entity/**/*.js",
   publicRoutes: process.env.PUBLICROUTES || [
     "users/create",
     "users/auth",
