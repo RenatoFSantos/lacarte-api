@@ -28,7 +28,6 @@ export default {
       database: "vledfypm",
       synchronize: true,
       logging: false,
-      entities: ["src/entity/**/*.ts", "build/entity/**/*.js"],
     });
   },
 };
