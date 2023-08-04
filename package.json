@@ -34,7 +34,7 @@
     "server": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts --delay 1500ms",
     "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
     "migration:run": "npx typeorm-ts-node-commonjs migration:run -- -d ./src/data-source.ts",
-    "build": "rm -rf ./build && npm install && tsc",
+    "build": "rm -rf ./build && tsc",
     "clean": "tsc --build --clean"
   }
 }
