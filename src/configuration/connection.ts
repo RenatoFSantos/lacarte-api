@@ -18,6 +18,7 @@ import { Promotion } from "../entity/Promotion";
 import { Voucher } from "../entity/Voucher";
 export default {
   createConnection: async () => {
+    console.log('Conectando Base de Dados!');
     await createConnection({
       type: "postgres",
       host: "silly.db.elephantsql.com",
