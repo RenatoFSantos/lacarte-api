@@ -27,7 +27,7 @@
     "nodemailer": "^6.8.0",
     "pg": "^8.11.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.45"
+    "typeorm": "^0.2.41"
   },
   "scripts": {
     "start": "node ./build/index.js",
