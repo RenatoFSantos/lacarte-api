@@ -35,7 +35,8 @@ export abstract class BaseController<T> extends BaseNotification {
     // Check if user has administrator rights
 
     if (this.checkNoPermission(request)) return this.errorRoot;
-    return this._repository.findOne(request.params.uid);
+    const uid = request.params.id as string;
+    return this._repository.findOne(uid);
   }
 
   async save(model: any, request: Request, isIgnore?: boolean) {
@@ -69,7 +70,7 @@ export abstract class BaseController<T> extends BaseNotification {
   async remove(request: Request) {
     // Check if user has administrator rights
     if (this.checkNoPermission(request)) return this.errorRoot;
-    const uid = request.params.uid;
+    const uid = request.params.id as string;
     let model: any = await this._repository.findOne(uid);
     if (model) {
       model.deleted = true;
