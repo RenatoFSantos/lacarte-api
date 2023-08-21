@@ -26,9 +26,7 @@ export class MenuController extends BaseController<Menu> {
 
     // --- Image Processing
     if (_model.menuTxImage && _model.menuTxImage !== "---") {
-      let pictureCreatedResult = await FileHelper.writePicture(
-        _model.menuTxImage
-      );
+      let pictureCreatedResult = await FileHelper.writePicture(_model.menuTxImage);
       if (pictureCreatedResult) {
         _model.menuTxImage = pictureCreatedResult;
       }

@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "silly.db.elephantsql.com",
+  "port": "5432",
+  "dburi": "postgres://vledfypm:ioY0dhj4KTHU5q8G9Ms1BQuZCJRDVDiX@silly.db.elephantsql.com/vledfypm",
+  "username": "vledfypm",
+  "password": "ioY0dhj4KTHU5q8G9Ms1BQuZCJRDVDiX",
+  "database": "vledfypm",
+  "logging": false,
+  "entities": ["src/entity/**/*.ts", "build/entity/**/*.js"],
+  "synchronize": true,
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": ["src/entity", "build/entity"],
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
