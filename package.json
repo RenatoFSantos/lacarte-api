@@ -26,6 +26,7 @@
     "ngx-spinner": "^13.1.1",
     "nodemailer": "^6.8.0",
     "pg": "^8.11.1",
+    "queue-microtask": "^1.2.3",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.41"
   },
